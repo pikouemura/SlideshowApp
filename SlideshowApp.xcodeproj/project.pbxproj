@@ -14,6 +14,10 @@
 		5BE0E7601D126F4A00BE81A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE0E75E1D126F4A00BE81A2 /* LaunchScreen.storyboard */; };
 		5BE0E76B1D126F4A00BE81A2 /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0E76A1D126F4A00BE81A2 /* SlideshowAppTests.swift */; };
 		5BE0E7761D126F4A00BE81A2 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0E7751D126F4A00BE81A2 /* SlideshowAppUITests.swift */; };
+		5BE0E7851D12754300BE81A2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE0E7831D12754300BE81A2 /* 2.jpg */; };
+		5BE0E7861D12754300BE81A2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE0E7841D12754300BE81A2 /* 1.jpg */; };
+		5BE0E7881D12761800BE81A2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BE0E7871D12761800BE81A2 /* 3.jpg */; };
+		5BE0E78A1D12765600BE81A2 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE0E7891D12765600BE81A2 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		5BE0E7711D126F4A00BE81A2 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BE0E7751D126F4A00BE81A2 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		5BE0E7771D126F4A00BE81A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE0E7831D12754300BE81A2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		5BE0E7841D12754300BE81A2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		5BE0E7871D12761800BE81A2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		5BE0E7891D12765600BE81A2 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,14 @@
 		5BE0E7541D126F4A00BE81A2 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BE0E78B1D12897A00BE81A2 /* img */,
 				5BE0E7551D126F4A00BE81A2 /* AppDelegate.swift */,
 				5BE0E7571D126F4A00BE81A2 /* ViewController.swift */,
 				5BE0E7591D126F4A00BE81A2 /* Main.storyboard */,
 				5BE0E75C1D126F4A00BE81A2 /* Assets.xcassets */,
 				5BE0E75E1D126F4A00BE81A2 /* LaunchScreen.storyboard */,
 				5BE0E7611D126F4A00BE81A2 /* Info.plist */,
+				5BE0E7891D12765600BE81A2 /* ResultViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,6 +133,16 @@
 				5BE0E7771D126F4A00BE81A2 /* Info.plist */,
 			);
 			path = SlideshowAppUITests;
+			sourceTree = "<group>";
+		};
+		5BE0E78B1D12897A00BE81A2 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				5BE0E7871D12761800BE81A2 /* 3.jpg */,
+				5BE0E7831D12754300BE81A2 /* 2.jpg */,
+				5BE0E7841D12754300BE81A2 /* 1.jpg */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +213,7 @@
 				TargetAttributes = {
 					5BE0E7511D126F4A00BE81A2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8HDW23J2P5;
 					};
 					5BE0E7651D126F4A00BE81A2 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -230,7 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BE0E7601D126F4A00BE81A2 /* LaunchScreen.storyboard in Resources */,
+				5BE0E7851D12754300BE81A2 /* 2.jpg in Resources */,
+				5BE0E7881D12761800BE81A2 /* 3.jpg in Resources */,
 				5BE0E75D1D126F4A00BE81A2 /* Assets.xcassets in Resources */,
+				5BE0E7861D12754300BE81A2 /* 1.jpg in Resources */,
 				5BE0E75B1D126F4A00BE81A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +282,7 @@
 			files = (
 				5BE0E7581D126F4A00BE81A2 /* ViewController.swift in Sources */,
 				5BE0E7561D126F4A00BE81A2 /* AppDelegate.swift in Sources */,
+				5BE0E78A1D12765600BE81A2 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.hiro.uemura.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +439,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.hiro.uemura.SlideshowApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
