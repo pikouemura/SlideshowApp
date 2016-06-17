@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var backBtn: UIButton!
     var number:Int = 0
     var timer:NSTimer?
     let imageAry:[String] = ["1.jpg","2.jpg","3.jpg"]
@@ -31,9 +33,13 @@ class ViewController: UIViewController {
     @IBAction func auto(sender: AnyObject) {
         if timer == nil || !timer!.valid {
             timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
+            backBtn.enabled = false
+            nextBtn.enabled = false
         }
         else {
             timer!.invalidate()
+            backBtn.enabled = true
+            nextBtn.enabled = true
         }
     }
 

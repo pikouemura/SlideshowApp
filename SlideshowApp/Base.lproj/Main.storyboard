@@ -82,7 +82,9 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="backBtn" destination="e1a-iG-P4d" id="z7x-yv-KC6"/>
                         <outlet property="imageView" destination="ElD-l5-klH" id="Hxp-Ah-xTf"/>
+                        <outlet property="nextBtn" destination="8fh-gD-QQ2" id="Lov-bT-t3V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
