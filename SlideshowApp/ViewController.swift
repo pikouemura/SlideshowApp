@@ -10,23 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     var number:Int = 0
-    var autoFlag:Bool = false
     var timer:NSTimer?
     let imageAry:[String] = ["1.jpg","2.jpg","3.jpg"]
-    let myImage1 = UIImage(named: "1.jpg")
-    let myImage2 = UIImage(named: "2.jpg")
-    let myImage3 = UIImage(named: "3.jpg")
     
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func back(sender: AnyObject) {
-        number = number - 1
-        setImageView()
+        if timer == nil || !timer!.valid {
+            number = number - 1
+            setImageView()
+        }
     }
     @IBAction func next(sender: AnyObject) {
-        number = number + 1
-        setImageView()
-        
+        if timer == nil || !timer!.valid {
+            number = number + 1
+            setImageView()
+        }
     }
     
     @IBAction func auto(sender: AnyObject) {
